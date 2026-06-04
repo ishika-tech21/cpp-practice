@@ -1,3 +1,6 @@
+// Program: Terminal Calculator
+// Concepts: switch-case, input/output, conditions
+
 #include <iostream>
 
 using std::cout;
@@ -33,13 +36,13 @@ int main() {
         case '/':
             // Guard rail against division by zero
             if (num2 == 0) {
-                cout << "❌ Error: Division by zero is undefined!" << endl;
+                cout << "Error: Division by zero is undefined!" << endl;
             } else {
                 cout << num1 << " / " << num2 << " = " << (num1 / num2) << endl;
             }
             break;
         default:
-            cout << "❌ Error: Invalid operator entered." << endl;
+            cout << "Error: Invalid operator entered." << endl;
     }
 
     return 0;
